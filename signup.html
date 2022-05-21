@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+    <header>
+        <title>
+            SignUp Page
+        </title>
+
+        <script>
+            function check(){
+                if(document.getElementById("apt").value == '')
+                {
+                    alert("APT FIELD IS EMPTY");
+                    return false;
+                }
+	            else
+                if(document.getElementById("Email").value == '')
+                {
+                    alert("EMAILFIELD IS EMPTY");
+                    return false;
+                }
+                else
+                if(document.getElementById("Password").value == '')
+                {
+                    alert("PASSWORD FIELD IS EMPTY");
+                    return false;
+                }
+                else
+                    return true;
+            }
+        </script>
+
+
+        <style>
+            body{
+                background-color: aquamarine;
+                text-align: center;
+            }
+
+            .TitleForm{
+                text-align: center;
+                vertical-align: top;
+                font-style: italic;
+                font-weight: bolder;
+                font-size: 50px;
+                color:black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .buttonColor{
+                background-color: black;
+                color:aquamarine;
+                padding: 8px;
+                border-radius: 15px;
+                font-weight: bold;
+                border-style: solid;
+                border-color: black;
+                font-style: italic;
+                font-size: 18px;
+                box-shadow: 10px 10px 10px rgba(0,0,0,.7);
+                margin-left: 20px;
+                transition: opacity 1s;
+                cursor: pointer;
+            }
+
+            .buttonColor:hover{
+                opacity: .7;
+            }
+
+            .buttonColor:active{
+                opacity: .3;
+            }
+
+            .prompt{
+                margin-top: 50px;
+                color:black;
+                font-size:20px;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .choices{
+                margin-top: 50px;
+                margin-right: 20px;
+                margin-left:20px;
+                margin-bottom: 20px;
+            }
+
+       
+          
+
+
+
+
+
+        </style>
+    </header>
+    <body>
+        <h1 class="TitleForm">SignUp Laundromat CSC350</h1>
+        <h2>Form By: <button class="buttonColor">Camilo</button><button class="buttonColor">Aliye</button><button class="buttonColor">Dinorah</button></h2>
+        <form form action="signup.php" method="post" onsubmit="check();">
+            <div>
+            <p class="prompt">Select APT#: </p>
+            <select size="4" name="apt" id="apt">
+                <Option value="1">1</Option>
+                <Option value="2">2</Option>
+                <Option value="3">3</Option>
+                <Option value="4">4</Option>
+                <Option value="5">5</Option>
+                <Option value="6">6</Option>
+                <Option value="7">7</Option>
+                <Option value="8">8</Option>
+                <Option value="9">9</Option>
+                <Option value="10">10</Option>
+                <Option value="11">11</Option>
+                <Option value="12">12</Option>
+                <Option value="13">13</Option>
+                <Option value="14">14</Option>
+                <Option value="15">15</Option>
+                <Option value="16">16</Option>
+                <Option value="17">17</Option>
+                <Option value="18">18</Option>
+                <Option value="19">19</Option>
+                <Option value="20">20</Option>
+                <Option value="21">21</Option>
+                <Option value="22">22</Option>
+                <Option value="23">23</Option>
+                <Option value="24">24</Option>
+                <Option value="25">25</Option>
+            </select>
+            </div>
+            <div>
+                <p class="prompt">Enter Email:</p>
+                <input  type="Text" id="Email" name="Email">
+            </div>
+            <div>
+                <p class="prompt">Enter Password: </p>
+                <input  type="Text" id="Password" name="Password">
+            </div>
+            <div class="choices">
+                <input class="buttonColor" type="Submit" value="Sign Up" >
+            </div>
+        </form>
+    </body>
+</html>
